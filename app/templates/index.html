@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento Genital - Início</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href= "{% url 'index' %}">Início</a></li>
+                <li><a href= "{% url 'puberdade' %}">Puberdade Masculina e Feminina</a></li>
+                <li><a href= "{% url 'topicos' %}">Tópicos</a></li>
+                <li><a href= "{% url 'imagens' %}">Imagens Relacionadas</a></li>
+            </ul>
+            <h1>Desenvolvimento do sistema genital masculino e feminino</h1>
+            <img src="{% static 'img/fundo.jpg' %}" alt="foto"/>
+            <p>A puberdade é o periodo em que o corpo do ser humano é conduzido à maturidade sexual, acontecimento que torna o indivíduo capaz de se reproduzir. Ela acopla um amplo conjunto de modificações corporais e emocionais que ocorrem durante a adolescência, na transição entre a infância e a idade adulta.
+                Nessa fase, também surgem muitos questionamentos e conflitos pessoais. Por isso, a puberdade é marcada como um período de intensas mudanças físicas e comportamentais.</p>
+        </nav>
+    </header>
+    
+    <main>
+        {% block content %} 
+        {% endblock %}
+       
+    </main>
+    
+    <footer>
+        
+    </footer>
+</body>
+</html>
