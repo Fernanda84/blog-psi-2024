@@ -9,5 +9,3 @@ def puberdade(request):
 def topicos(request):
     return render(request, 'topicos.html')
 
-def imagens(request):
-    return render(request, 'imagens.html')
